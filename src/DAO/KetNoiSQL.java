@@ -19,7 +19,7 @@ public class KetNoiSQL {
 		try {
 			Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
 			try {
-				conn = DriverManager.getConnection("jdbc:sqlserver://localhost:1433;databaseName=QuanLyThuVien_HKP2T;user=sa;password=12345");
+				conn = DriverManager.getConnection("jdbc:sqlserver://localhost:1433;databaseName=QuanLyThuVien_HKP2T;user=sa;password=12345;encrypt=true;trustServerCertificate=true;sslProtocol=T");
 //				System.out.println("yes");
 				return conn;
 			} catch (SQLException e) {
